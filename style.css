@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-family: "Mulish", sans-serif;
+  font-size: 62.5%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 9.5rem;
+}
+
+#astronaut {
+  max-width: 720px;
+  margin: 0 34px 17px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 34px;
+}
+
+.content h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #b52184;
+}
+
+.content p {
+  font-size: 1.7rem;
+  color: #312d64;
+
+  margin-bottom: 35px;
+}
+
+#arrow {
+  width: 59px;
+}
+
+main h1 {
+  font-size: 2.7rem;
+  color: #b52184;
+}
+
+main p {
+  font-size: 1.5rem;
+  color: #312d64;
+
+  margin-top: 1.7rem;
+}
+
+.cards {
+  padding: 52px 39px;
+
+  background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  padding: 2.7rem 5rem 2.7rem 3.2rem;
+
+  margin-bottom: 3.2rem;
+
+  border-radius: 2.4rem;
+  background: #fff;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+  width: 80px;
+
+  margin-bottom: 3.2rem;
+}
+
+.form-wrapper {
+  padding: 79px 40px 65px;
+}
+
+.form h1 {
+  font-size: 2.2rem;
+  color: #b52184;
+
+  margin-bottom: 4.3rem;
+}
+
+.formName {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  height: 2.8rem;
+  padding: 1.2rem 1.4rem;
+
+  gap: 1.2rem;
+
+  border-radius: 16px;
+  border: 1.5px solid #312d64;
+  margin-bottom: 2.4rem;
+}
+
+input {
+  border: none;
+  outline: none;
+
+  font-size: 1.5rem;
+  color: #312d64;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 1.6rem;
+  border: 1.5px solid #312d64;
+  font-family: "Mulish", sans-serif;
+
+  padding: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+.form button {
+  width: 15.1rem;
+  height: 5.6rem;
+
+  border: none;
+  border-radius: 1.6rem;
+  background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
+
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.form-image {
+  display: none;
+}
+
+footer {
+  height: 7.8rem;
+  background-color: #312d64;
+}
+
+footer p {
+  font-size: 1.9rem;
+  color: white;
+
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+@media (min-width: 1120px) {
+  header {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  #astronaut {
+    order: 2;
+    margin-left: 0;
+    width: 600px;
+  }
+
+  .content {
+    align-items: flex-start;
+    margin-left: 10.9rem;
+  }
+
+  .content p {
+    margin-bottom: 179px;
+  }
+
+  .cards {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 2.4rem;
+  }
+
+  .form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.4rem;
+
+    padding: 0;
+  }
+
+  .form {
+    width: 50%;
+    padding: 9.2rem;
+  }
+
+  .form-image,
+  .form-image img {
+    margin: 0;
+    padding: 0;
+  }
+
+  .form-image {
+    display: flex;
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
